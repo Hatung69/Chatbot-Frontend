@@ -1,0 +1,46 @@
+.card-tutorial {
+  height: 35rem;
+  background: linear-gradient(
+    103deg,
+    rgba(6, 0, 17, 1) 0%,
+    rgba(15, 2, 41, 1) 53%,
+    rgba(4, 0, 12, 0.7618106456285112) 83%,
+    rgba(5, 0, 14, 0.6129342411341292) 100%
+  );
+  border-radius: 5px;
+  color: white;
+
+  padding: 20px;
+  font-size: large;
+}
+
+div img {
+  width: 4rem;
+  padding: 2px 0px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .card-tutorial {
+    padding: 15px;
+    font-size: medium;
+  }
+
+  div img {
+    width: 3rem;
+    padding: 2px 0px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card-tutorial {
+    padding: 5px;
+    font-size: small;
+  }
+  .text-center {
+    padding-top: 2px;
+  }
+  div img {
+    width: 3rem;
+    padding: 1px 0px;
+  }
+}

@@ -1,0 +1,17 @@
+<div class="card-footer">
+  <div class="subscribe-form">
+    <input
+      type="text"
+      id="typeahead-basic"
+      class="subscribe-form-input"
+      placeholder="Nhập nội dung..."
+      (keyup.enter)="sendMessage()"
+      [(ngModel)]="message.content"
+      [ngbTypeahead]="suggest"
+      autofocus
+    />
+    <button class="subscribe-form-button mr-1" (click)="sendMessage()">
+      <i class="fas fa-lg fa-paper-plane"></i>
+    </button>
+  </div>
+</div>

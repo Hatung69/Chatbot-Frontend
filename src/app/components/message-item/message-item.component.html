@@ -1,0 +1,22 @@
+<!-- Bot chat -->
+<div
+  *ngIf="message.isBot"
+  class="d-flex justify-content-start mb-3 animate__animated animate__fadeIn"
+>
+  <div class="img_cont_msg">
+    <img src="/Chatbot-frontend/assets/img/logo.png" class="user_img_msg" />
+  </div>
+  <div class="msg_cotainer" [innerHTML]="message.content">
+    <span class="msg_time">{{ message.timestamp | date: "h:mm" }}</span>
+  </div>
+</div>
+<!-- User chat -->
+<div
+  *ngIf="!message.isBot"
+  class="d-flex justify-content-end mb-3 animate__animated animate__fadeIn"
+>
+  <div class="msg_cotainer_send">
+    {{ message.content }}
+    <span class="msg_time_send">{{ message.timestamp | date: "h:mm" }}</span>
+  </div>
+</div>
